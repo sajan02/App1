@@ -1,0 +1,18 @@
+<ion-menu [content]="nav">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Setting</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list >
+            <button ion-item (click)="openPage(rootPage)">
+                <ion-icon name="quote" item-left></ion-icon>Quote
+            </button>
+            <button ion-item (click)="openPage(setting)">
+                <ion-icon name="setting" item-left></ion-icon>setting
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #nav></ion-nav>
